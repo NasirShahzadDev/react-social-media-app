@@ -12,7 +12,7 @@ function Share() {
     <div className="p-4 bg-white rounded-lg">
       {/** Upper of Share */}
       <div className="flex p-2 bg-white">
-        <img src="/1.jpg" alt="" className="h-12 w-12 rounded-full" />
+        <img src="/profile1.jpg" alt="" className="h-12 w-12 rounded-full" />
         <input type="text" className="w-full pl-3 border-none outline-none" placeholder="What's in your mind?" />
       </div>
 

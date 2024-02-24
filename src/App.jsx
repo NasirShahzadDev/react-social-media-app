@@ -1,23 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import TopBar from "./components/TopBar/TopBar";
-import LeftBar from "./components/leftBar/LeftBar";
-import Feed from "./components/feed/Feed";
-import RightBar from "./components/rightBar/RightBar";
-
+import Home from "./components/home/Home";
+import Profile from "./components/profile/Profile";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <TopBar />
-      <div className="flex pt-16">
-        <LeftBar />
-        <Feed />
-        <RightBar />
-      </div>
-    </>
-  );
+  return <Profile />;
 }
 
 export default App;

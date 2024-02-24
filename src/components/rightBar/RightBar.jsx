@@ -1,3 +1,5 @@
+import Online from "../online/Online";
+import { Users } from "../../usersData";
 import { FaBirthdayCake } from "react-icons/fa";
 function RightBar() {
   return (
@@ -18,44 +20,50 @@ function RightBar() {
       {/** Online Friends */}
       <div className="p-6">
         <h1 className="text-2xl font-bold pb-4">Online Friends</h1>
-        <div className="flex gap-4">
+        <div className="">
           <ul className="flex flex-col gap-2">
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
-
-            <li className="flex gap-4 items-center">
-              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-              <span className="text-xl">John Deo</span>
-            </li>
+            {Users.map((u) => (
+              <Online key={u.id} user={u} />
+            ))}
           </ul>
+
+          {/* <ul className="flex flex-col gap-2">
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+
+            <li className="flex gap-4 items-center">
+              <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
+              <span className="text-xl">John Deo</span>
+            </li>
+          </ul> */}
         </div>
       </div>
     </div>

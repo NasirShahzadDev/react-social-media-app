@@ -8,6 +8,9 @@ import { TbBriefcaseFilled } from "react-icons/tb";
 import { MdOutlineEventRepeat } from "react-icons/md";
 import { SiReadme } from "react-icons/si";
 
+import Friends from "../friends/Friends";
+import { Users } from "../../usersData";
+
 function LeftBar() {
   return (
     <div className="w-3/12 h-full pl-8 overflow-y-auto">
@@ -71,41 +74,9 @@ function LeftBar() {
       {/** Online Friends */}
       <div className="pt-4">
         <ul className="flex flex-col gap-2">
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
-
-          <li className="flex gap-4 items-center">
-            <img src="/1.jpg" alt="" className="h-10 w-10 rounded-full" />
-            <span className="text-xl">John Deo</span>
-          </li>
+          {Users.map((u) => (
+            <Friends key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
