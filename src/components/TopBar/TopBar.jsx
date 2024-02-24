@@ -9,12 +9,13 @@ import { GoPerson } from "react-icons/go";
 function TopBar() {
   return (
     <div className="bg-blue-500 h-[70px] w-full m-0 flex items-center justify-center fixed">
-      {/** Top Bar Left */}
+      {/** ======================= Top Bar Left ======================= */}
+
       <div className="w-3/12 pl-12">
         <span className="text-3xl font-bold text-white cursor-pointer">Social Media</span>
       </div>
 
-      {/** Top Bar Center */}
+      {/** ======================= Top Bar Center ======================= */}
       <div className="w-5/12 flex gap-2 p-5">
         {/* <div className="bg-red-300 flex items-center gap-2 h-12 mt-4 w-full my-12"> */}
         {/* <IoSearchOutline className="searchIcon" /> */}
@@ -25,7 +26,7 @@ function TopBar() {
         {/* </div> */}
       </div>
 
-      {/** Top Bar Right */}
+      {/** ======================= Top Bar Right ======================= */}
       <div className="w-4/12 flex gap-3 text-center items-center pl-6">
         <div className="flex gap-2 text-white">
           <span className="cursor-pointer text-lg font-semibold">HomePage</span>
