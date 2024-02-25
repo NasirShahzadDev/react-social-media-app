@@ -8,9 +8,17 @@ function Home() {
     <>
       <TopBar />
       <div className="flex pt-16">
-        <LeftBar />
-        <Feed />
-        <RightBar />
+        <div className="w-3/12">
+          <LeftBar />
+        </div>
+
+        <div className="w-5/12">
+          <Feed />
+        </div>
+
+        <div className="w-4/12">
+          <RightBar />
+        </div>
       </div>
     </>
   );

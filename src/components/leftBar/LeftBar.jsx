@@ -13,7 +13,7 @@ import { Users } from "../../usersData";
 
 function LeftBar() {
   return (
-    <div className="w-3/12 h-full pl-8 overflow-y-auto">
+    <div className=" h-full pl-8 overflow-y-auto">
       {/** Feed Section */}
       <div className="flex flex-col gap-7 pt-8">
         <div className="flex items-center gap-4">

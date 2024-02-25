@@ -8,7 +8,7 @@ import { GoPerson } from "react-icons/go";
 
 function TopBar() {
   return (
-    <div className="bg-blue-500 h-[70px] w-full m-0 flex items-center justify-center fixed">
+    <div className="bg-blue-500 h-[70px] w-full m-0 flex z-10 items-center justify-center fixed">
       {/** ======================= Top Bar Left ======================= */}
 
       <div className="w-3/12 pl-12">

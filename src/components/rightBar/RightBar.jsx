@@ -3,7 +3,7 @@ import { Users } from "../../usersData";
 import { FaBirthdayCake } from "react-icons/fa";
 function RightBar() {
   return (
-    <div className="w-4/12 p-4">
+    <div className=" p-4">
       {/**Birthdays */}
       <div className="flex gap-2">
         <FaBirthdayCake className="size-16 text-orange-700" />
@@ -20,7 +20,7 @@ function RightBar() {
       {/** Online Friends */}
       <div className="p-6">
         <h1 className="text-2xl font-bold pb-4">Online Friends</h1>
-        <div className="">
+        <div className="gap-8">
           <ul className="flex flex-col gap-2">
             {Users.map((u) => (
               <Online key={u.id} user={u} />
